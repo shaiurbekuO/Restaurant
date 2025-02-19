@@ -27,6 +27,7 @@ public class User {
     private String email;
     private String password;
     private int phoneNumber;
+    @Enumerated(EnumType.STRING)
     private Role role;
     private String experience;
     @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
